@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard_1"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/song_title"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_song_title_here"
+        android:inputType="text"
+        android:textColorHint="#DAD5D5"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/tvSingers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/singers"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/singers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="@string/enter_singers_name_here"
+        android:inputType="text"
+        android:textColorHint="#DAD5D5"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/tvYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/year"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Enter year of release here"
+        android:inputType="text"
+        android:textColorHint="#DAD5D5"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/tvStars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stars"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="5dp">
+
+        <RadioGroup
+            android:id="@+id/stars"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/star1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFFFFF"
+                android:text="@string/_1"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/star2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFFFFF"
+                android:text="@string/_2"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/star3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFFFFF"
+                android:text="@string/_3"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/star4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFFFFF"
+                android:text="@string/_4"
+                android:textColor="#FFFFFF" />
+
+            <RadioButton
+                android:id="@+id/star5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFFFFF"
+                android:text="@string/_5"
+                android:textColor="#FFFFFF" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gothic_a1_extrabold"
+            android:background="#1DB954"
+            android:textColor="#FFFFFF"
+            android:text="INSERT"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/btnDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/gothic_a1_extrabold"
+            android:background="#1DB954"
+            android:textColor="#FFFFFF"
+            android:text="SHOW LIST" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List:"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/gothic_a1_extrabold"
+        android:background="#1DB954"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>
